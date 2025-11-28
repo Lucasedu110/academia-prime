@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Academia Prime</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="#hero">Início</a>
+    <a href="#planos">Planos</a>
+    <a href="#inscricao">Inscrição</a>
+</nav>
+
+<section id="hero" class="hero">
+    <h1 class="titulo-hero">Academia Prime</h1>
+    <img src="./assets/IMG_5232.webp" alt="Foto da Academia">
+</section>
+
+<section id="planos" class="planos">
+    <article class="card" data-plan="Musculação">
+        <div>
+            <div class="card-title">Musculação</div>
+            <p>Treino focado em força e hipertrofia com equipamentos modernos e acompanhamento profissional.</p>
+        </div>
+        <div>
+            <strong>R$ 120 / mês</strong><br><br>
+            <button class="interest-btn" data-plan="Musculação">Tenho interesse</button>
+        </div>
+    </article>
+
+    <article class="card" data-plan="Funcional">
+        <div>
+            <div class="card-title">Funcional</div>
+            <p>Aulas dinâmicas para condicionamento, emagrecimento e resistência com ambiente motivador.</p>
+        </div>
+        <div>
+            <strong>R$ 70 / mês</strong><br>
+            <small>Integração com musculação: + R$ 40</small><br><br>
+            <button class="interest-btn" data-plan="Funcional">Tenho interesse</button>
+        </div>
+    </article>
+
+    <article class="card" data-plan="Lutas">
+        <div>
+            <div class="card-title">Lutas</div>
+            <p>Muay Thai e Boxe com professores experientes para condicionamento, disciplina e defesa pessoal.</p>
+        </div>
+        <div>
+            <strong>R$ 120 / mês</strong><br><br>
+            <button class="interest-btn" data-plan="Lutas">Tenho interesse</button>
+        </div>
+    </article>
+</section>
+
+<form id="inscricao">
+    <span class="close-x">&times;</span>
+    <h2>Inscrição rápida</h2>
+    <div class="form-row">
+        <input id="nome" type="text" placeholder="Seu nome" required />
+        <input id="email" type="email" placeholder="Seu e-mail" required />
+    </div>
+    <div class="form-row" style="margin-top:8px">
+        <input id="telefone" type="tel" placeholder="Telefone (WhatsApp)" required />
+        <input id="plano" type="text" placeholder="Plano de interesse" readonly />
+    </div>
+    <textarea id="observacao" placeholder="Mensagem ou observação (opcional)" rows="3" style="margin-top:10px"></textarea>
+    <button type="submit">Enviar inscrição</button>
+</form>
+
+<div class="toast" id="toast">Inscrição enviada!</div>
+
+<a class="whatsapp-btn" id="whatsBtn" data-phone="5541996340859" href="#">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<footer>
+    © 2025 Academia Prime • Endereço: Rua Exemplo, 123 • Aberto: Seg–Sex 6h–22h
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
